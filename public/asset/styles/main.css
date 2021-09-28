@@ -1,0 +1,58 @@
+.members .member-image {
+  width: 40px;
+  height: 40px;
+}
+
+.join-container {
+  margin-top: -16px;
+}
+
+.btn-join-now {
+  background-color: #ff9e53;
+  color: #fff;
+  border-radius: o;
+}
+
+.btn-join-now:hover {
+  background-color: #ffb57c;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .login-container {
+    background: -webkit-gradient(linear, left top, right top, color-stop(63%, #ffff), color-stop(37%, #f6544f));
+    background: linear-gradient(90deg, #ffff 63%, #f6544f 37%);
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.page-login {
+  height: 100vh;
+}
+
+.page-login .btn-login {
+  background-color: #f6544f;
+  color: #fff;
+}
+
+.page-login .btn-login:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.page-login .section-left {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 50px;
+  color: #f6544f;
+}
+
+.page-login .section-right a {
+  font-family: Assistant;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #bfbfbf;
+}
+/*# sourceMappingURL=main.css.map */
