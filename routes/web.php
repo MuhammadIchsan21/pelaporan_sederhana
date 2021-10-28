@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ServicesController@index')
             ->name('services.index');
-// Route::resource('services', 'ServicesController');
+Route::get('/home', 'ServicesController@index');
+
 Route::get('/home/create', 'ServicesController@create')
             ->name('services-create')
             ->middleware(['auth']);
@@ -31,4 +32,4 @@ Route::resource('dashboard', 'DashboardController')
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+
