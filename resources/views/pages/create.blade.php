@@ -1,11 +1,11 @@
-@extends('layouts.admin')
+@extends('layouts.create')
 @section('content')
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tambah Transaksi</h1>
+    <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5">
+        <h1 class="h3 mb-0 text-gray-800">Buat laporan kerusakan assets it</h1>
     </div>
 
     @if ($errors->any())
