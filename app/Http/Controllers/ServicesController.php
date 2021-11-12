@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\services;
+use App\User;
 use Illuminate\Http\Request;
 
 class ServicesController extends Controller
@@ -19,17 +20,18 @@ class ServicesController extends Controller
 
     public function create()
     {
-        return view('pages.create');
+        $user = User::all();
+        return view('pages.create', [
+            'user' => $user
+        ]);
     }
 
     public function store(Request $request)
     {
        $request->validate([
-            'nama' => 'required',
             'divisi' => 'required',
             'keluhan' => 'required',
         ]);
-
         services::create($request->all());
 
         return redirect()->route('services.index')

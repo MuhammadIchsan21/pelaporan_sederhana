@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     @include('includes.admin.style')
-    <title>Dashboard</title>
+    <title>Buat Laporan </title>
 
 
 </head>

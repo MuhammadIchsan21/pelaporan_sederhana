@@ -13,4 +13,8 @@ class services extends Model
     protected $fillable = [
         'nama','divisi','keluhan'
     ];
+     public function user()
+    {
+        return $this->belongsTo(User::class, 'users_id', 'id');
+    }
 }

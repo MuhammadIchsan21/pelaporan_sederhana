@@ -24,11 +24,19 @@
                 @csrf
                 <div class="form-group">
                     <label>nama</label>
-                    <input type="text" class="form-control" name="nama" placeholder="Nama">
+                    <input type="text" class="form-control" name="name" placeholder="Nama">
                 </div>
                 <div class="form-group">
-                    <label>Divisi</label>
-                    <input type="text" class="form-control" name="divisi" placeholder="Divisi">
+                    <label for="divisi">Status</label>
+                    <select name="divisi" required class="form-control">
+                        <option hidden>Silahkan PILIH DIVISI ANDA</option>
+                        <option value="it">IT</option>
+                        <option value="pbau">PBAU</option>
+                        <option value="teknik">Teknik</option>
+                        <option value="keuangan">Keuangan</option>
+                        <option value="tata_usaha">Tata Usaha</option>
+
+                    </select>
                 </div>
                 <div class="form-group">
                     <label>keluhan</label>
