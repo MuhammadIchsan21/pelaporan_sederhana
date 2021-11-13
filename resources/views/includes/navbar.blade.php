@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link active">Beranda</a>
+                    <a href="{{ url('/') }}" class="nav-link active">Beranda</a>
                 </li>
             </ul>
 

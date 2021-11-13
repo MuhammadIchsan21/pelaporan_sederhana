@@ -34,7 +34,7 @@
                         <option value="pbau">PBAU</option>
                         <option value="teknik">Teknik</option>
                         <option value="keuangan">Keuangan</option>
-                        <option value="tata_usaha">Tata Usaha</option>
+                        <option value="tatausaha">Tata Usaha</option>
 
                     </select>
                 </div>
