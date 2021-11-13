@@ -24,7 +24,7 @@
                 @csrf
                 <div class="form-group">
                     <label>nama</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nama">
+                    <input type="text" class="form-control" name="nama" placeholder="Nama">
                 </div>
                 <div class="form-group">
                     <label for="divisi">Status</label>
@@ -35,13 +35,19 @@
                         <option value="teknik">Teknik</option>
                         <option value="keuangan">Keuangan</option>
                         <option value="tata_usaha">Tata Usaha</option>
-
                     </select>
                 </div>
                 <div class="form-group">
                     <label>keluhan</label>
                     <input type="text" class="form-control" name="keluhan" placeholder="Keluhan">
                 </div>
+                {{-- <div class="form-group">
+                    <label>status</label>
+                    <select name="divisi" required class="form-control">
+                        <option hidden>pilih</option>
+                        <option value="sedang_dikerjakan">Sedang dikerjakan</option>
+                    </select>
+                </div> --}}
                 <button type="submit" class="btn btn-primary btn-block">Simpan</button>
             </form>
         </div>

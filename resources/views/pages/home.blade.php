@@ -27,6 +27,7 @@ Home
                         <th>Nama Orang</th>
                         <th>divisi</th>
                         <th>Keluhan</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,7 @@ Home
                         <td>{{$item->nama}}</td>
                         <td>{{$item->divisi}}</td>
                         <td>{{ $item->keluhan}}</td>
+                        <td>{{ $item->status}}</td>
                         @empty
                     <tr>
                         <td colspan="7" class="text-center">

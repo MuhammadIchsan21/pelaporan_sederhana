@@ -75,7 +75,7 @@ class DashboardController extends Controller
     $data = $request->all();
     $item = services::findOrFail($id);
     $item->update($data);
-    return redirect()->route('dashboard');
+    return redirect()->route('dashboard.index');
     }
 
     /**

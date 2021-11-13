@@ -29,10 +29,15 @@ class ServicesController extends Controller
     public function store(Request $request)
     {
        $request->validate([
+           'nama' => 'required',
             'divisi' => 'required',
             'keluhan' => 'required',
         ]);
-        services::create($request->all());
+        services::create([
+            'nama' => request('nama'),
+            'divisi' => request('divisi'),
+            'keluhan' => request('keluhan')
+        ]);
 
         return redirect()->route('services.index')
                         ->with('success','Product created successfully.');

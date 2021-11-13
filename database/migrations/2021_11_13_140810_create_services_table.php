@@ -18,6 +18,7 @@ class CreateServicesTable extends Migration
             $table->string('nama')->nullable();
             $table->string('divisi');
             $table->string('keluhan');
+            $table->string('status')->default('pending');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -36,7 +36,7 @@
                         <td>{{$item->nama}}</td>
                         <td>{{$item->divisi}}</td>
                         <td>{{ $item->keluhan}}</td>
-                        <td>Null</td>
+                        <td>{{ $item->status}}</td>
                         <td>
                             <a href="{{route('dashboard.edit', $item->id)}}" class="btn btn-info">
                                 <i class="fa fa-pencil-alt"></i>

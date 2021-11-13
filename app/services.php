@@ -11,7 +11,7 @@ class services extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'nama','divisi','keluhan'
+        'nama', 'divisi', 'keluhan', 'status'
     ];
      public function user()
     {

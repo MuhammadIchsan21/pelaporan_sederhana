@@ -40,6 +40,16 @@
                     <input type="text" class="form-control" name="keluhan" placeholder="Keluhan"
                         value="{{ $item->keluhan }}">
                 </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select name="status" required class="form-control">
+                        <option value="{{$item->status}}">
+                            Jangan Di Ganti ({{$item->status}})
+                        </option>
+                        <option value="dikerjakan">Sedang Di Kerjakan</option>
+                        <option value="berhasil">Berhasil</option>
+                    </select>
+                </div>
                 <button type="submit" class="btn btn-primary btn-block">Perbarui</button>
             </form>
         </div>
